@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    
+    <!-- Change your site title: (It is shown in the tab) -->
+    <title>Aryan's Page</title>
+
+    <!-- Change your site description: (It is shown in Google results) -->
+    <meta content="Aryan's Website" name="A Page Made for no reason" />
+
+    <!-- Setting character encoding and viewport size. Do not remove. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FavIcon (small image in tab), change to any image you want: -->
+    <link rel="icon" type="image/png" href="guts.png">
+
+    <!-- CSS: -->
+    <!-- You will have to change this to "../style.css" if this HTML file is in a subfolder, to "../../style.css" if this HTML file is in 2 subfolders, etc. -->
+    <link href="./style.css" rel="stylesheet" />
+    
+
+    <script>
+      // Template generated with petrapixel's layout generator.
+      // (Please do not remove this credit.)
+      console.log("%cTemplate generated with petrapixel's layout generator: https://petrapixel.neocities.org/coding/layout-generator", "font-size: 14pt; color: #922a45; background: #ffd3ef");
+    </script>
+    
+  </head>
+  <body>
+    
+    
+    <!-- The next line is a skip-to-content link for keyboard users. Do not remove it! -->
+    <a href="#content" id="skip-to-content-link">Skip to content</a>
+
+    <div class="layout">
+  
+      <!-- =============================================== -->
+      <!-- HEADER -->
+      <!-- =============================================== -->
+
+      <header>
+
+        <div class="header-content">
+	        <div class="header-title">Aryan's Page</div>
+	        
+	        <button class="button" onclick="Myfunction()" style="margin-bottom: 60px"><strong>Toggle Colour Mode</strong></button>
+	        
+	        <!-- NAVIGATION -->
+	        <nav>
+	          <ul>
+	            <li>
+	                <strong>Navigation Menu ▼</strong>
+	                <ul>
+	                  <li><a href="https://www.instagram.com/dragioy/" target="_blank">Instagram</a></li>
+	                  <li><a href="https://discordapp.com/users/472277787646885898" target="_blank">Discord</a></li>
+	                  <li><a href="https://github.com/DragioPlay" target="_blank">Github</a></li>
+	                  <li><a href="https://open.spotify.com/user/31ns7sgo6z36357xgb6iipcjrooy?si=ec90d93cf6e14587" target="_blank">Spotify</a></li>
+	                  <li><a href="https://dragio.atabook.org/" target="_blank">GuestBook</a></li>
+	                </ul>
+	            </li>
+	          </ul>
+	        </nav>
+	        
+        	
+        </div>
+      </header>
+
+	  
+        
+      <!-- =============================================== -->
+      <!-- LEFT SIDEBAR -->
+      <!-- =============================================== -->
+
+      <aside class="left-sidebar">
+	  
+        
+        <div class="sidebar-section">
+          <div class="sidebar-title" style="text-align: center;">Music I Like</div>
+          <br>
+          
+          <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/27YJXeoTA8hCMVRuSMWglx?utm_source=generator&theme=0" width="100%" height="1056" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <br>  
+          
+        </div>
+        
+        <div class="sidebar-section">
+          <div class="sidebar-title" style="text-align: center;">Quotes I Like</div>
+          <blockquote>
+            <div style="text-align: center;">
+            <i>“This story is the tale of me starting to walk. Not in the physical sense… but in an adolescence to adulthood sort of way…”</i>
+            <br>
+            <br>
+            <i>“Audentes Fortuna Iuvat” Fortune Favours the Bold</i>
+            <br>
+            </div>
+          </blockquote>
+        </div>
+        
+        <div class="sidebar-section">
+          <div class="sidebar-title" style="text-align: center;">Foods I Like</div>
+          <ul>
+            <li><strong>Pasta (Ravioli)</strong></li>
+            <li><strong>Chicken Curry</strong></li>
+            <li><strong>Ramen</strong></li>
+          </ul>
+        </div>
+        
+        <div class="sidebar-section">
+          <div class="sidebar-title" style="text-align: center;">Covers</div>
+          <marquee>
+            <div>
+          	<img src="bcover.webp" class="scroll-img" style="width:200px;height:300px; border:2px solid;display:block;margin:auto; white-space: nowrap;float: none; display: inline-block;">
+          	<img src="sbr.webp" class="scroll-img" style="width:200px;height:300px; border:2px solid;display:block;margin:auto; white-space: nowrap; float: none; display: inline-block;">
+          	<img src="climber.jpg" class="scroll-img" style="width:200px;height:300px; border:2px solid;display:block;margin:auto; white-space: nowrap; float: none; display: inline-block;">
+          	<img src="vinland.jpg" class="scroll-img" style="width:200px;height:300px; border:2px solid;display:block;margin:auto; white-space: nowrap; float: none; display: inline-block;">
+          	<img src="eva.jpg" class="scroll-img" style="width:200px;height:300px; border:2px solid;display:block;margin:auto; white-space: nowrap; float: none; display: inline-block;">
+          	</div>
+          </marquee>
+        </div>
+        
+        
+  <div class="sidebar-section">
+  <div class="sidebar-title" style="text-align: center;">Snake Game</div>
+  <p style="text-align: center;"><small>Use WASD for desktop or the Touch Controls for mobile</small></p>
+
+  <!-- Score Display -->
+  <div style="text-align:center; margin-bottom:5px;"><strong>
+    Score: <span id="score">0</span>
+  </strong></div>
+  
+  <div style="margin-top:20px; text-align:center;">
+    <strong><u>High Score:</u></strong>
+    <strong id="leaderboard" style="
+    padding-left:20px;
+    margin-top:10px;
+    text-align:left;
+    display:inline-block;
+    list-style-type: none;">
+    </strong>
+
+  </div>
+
+  <div id="snake-container" style="
+      width: 100%;
+      height: 250px;
+      border: 2px solid white;
+      background: rgba(0,0,0,0.4);
+      position: relative;
+      overflow: hidden;">
+    
+    <canvas id="snake-canvas" width="300" height="250" style="width:100%;height:100%;"></canvas>
+    
+    <div id="gameover-screen" 
+     style="
+        position:absolute;
+        top:0; left:0;
+        width:100%; height:100%;
+        background:rgba(0,0,0,0.75);
+        color:white;
+        font-size:32px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        display:none;
+        z-index: 9999;  
+        pointer-events: auto;
+     ">
+    <div>GAME OVER</div>
+    <div style="font-size:20px; margin-top:10px;">Tap or click to restart</div>
+    </div>
+
+
+    <!-- Mobile swipe overlay -->
+    <div id="touch-layer" style="
+      position:absolute;
+      top:0; left:0;
+      width:100%; height:100%;
+      z-index:10;">
+    </div>
+  </div>
+
+  <!-- TOUCH CONTROLS (Centered + Bigger + Proper Layout) -->
+  <div id="touch-controls">
+      <div class="touch-row" style="text-align:center;">
+        <button class="btn-touch hide-on-desktop" style="font-size: 10vw" data-dir="up">▲</button>
+      </div>
+
+      <div class="touch-row" style="display:flex; justify-content:center; gap:20px; margin-top:10px;">
+        <button  class="btn-touch hide-on-desktop" style="font-size: 10vw" data-dir="left">◀</button>
+        <button  class="btn-touch hide-on-desktop" style="font-size: 10vw" data-dir="down">▼</button>
+        <button  class="btn-touch hide-on-desktop" style="font-size: 10vw" data-dir="right">▶</button>
+      </div>
+  </div>
+</div>
+        
+      </aside>
+	
+      
+  
+      <main id="content"> <!-- Do NOT remove the ID here -->
+
+        
+
+        <!-- =============================================== -->
+        <!-- MAIN CONTENT -->
+        <!-- =============================================== -->
+
+
+        <section>
+
+          <h1>About Me</h1>
+          <p>
+            
+            <img class="image gif" alt="" style="width:100px;height:100px;" src="qut.png"/>
+            <blockquote style="text-align: center; margin-top: 45px;"><b>Bachelor of Information Technology</b></blockquote>
+            <br>
+            <br>
+          
+            <img class="image gif" alt="" style="width: 110px;height:100px;" src="cat-jumping.gif"/>
+            <blockquote style="text-align: center; margin-top: 35px; margin-right: 0;">Born on the 25th of June</blockquote>
+            <br>
+            
+            
+            <img class="image gif" alt="" style="width: 100px;height:80px;" src="book.gif"/>
+            <blockquote style="text-align: center; margin-top: 20px;">2024 Highschool Graduate</blockquote>
+            <br>
+            
+            
+            
+            
+            <h2>Favourite Games</h2>
+            <br>
+            
+            <img class="image" alt="" style="width:40%;height:35%;border: 2px solid;" src="elden.jpg"/>
+            <img  alt="" class="center" style="width:45%;height:40%;" src="erlogo.png"/>
+            <br>
+            <br>
+            <br>
+            
+            <img class="image" alt="" style="width:40%;height:35%;border: 2px solid;" src="witcher.jpg"/>
+            <img  alt="" class="center" style="width:50%;height:45%;margin-top: 2%;" src="wlogo.png"/>
+            <br>
+            <br>
+            <br>
+            
+            <img class="image" alt="" style="width:40%;height:35%;border: 2px solid;" src="cyberpunk.webp"/>
+            <img  alt="" class="center" style="width:50%;height:45%;" src="cplogo.png"/>
+            <br>
+            <br>
+            <br>
+            
+            
+            <h2>Favourite Movie</h2>
+            <br>
+            
+            <img class="image" alt="" style="width:40%;height:35%;border: 2px solid;" src="alien.jpg"/>
+            <img  alt="" class="center" style="width:50%;height:45%;margin-top: 7%;" src="alogo.png"/>
+            <br>
+            <br>
+            <br>
+            
+            <h2>Favourite Show</h2>
+            <br>
+            
+            <img class="image" alt="" style="width:40%;height 35%;border: 2px solid;" src="jojo.jpg"/>
+            <img  alt="" class="center" style="width:45%;height:40%;margin-top: 1%;" src="jojologo.png"/>
+            <br>
+            <br>
+            
+            <h2>Favourite Book</h2>
+            <br>
+            
+            <img class="image" alt="" style="width:35%;height:30%;border: 2px solid;" src="berserk.png"/>
+            <img  alt="" class="center" style="width:60%;height:60%; margin-top: 3%;" src="berlogo.png"/>
+            <br>
+            <br>
+            <br>
+            
+          </p>
+          
+
+    
+        
+        
+
+        </section>
+      </main>
+
+
+      <!-- =============================================== -->
+      <!-- FOOTER -->
+      <!-- =============================================== -->
+      
+      
+      <footer>
+        <div>
+        <h2 style="text-align: center;">Leave a Message</h2>
+        <p style="text-align: center;">Since you've scrolled this far</p>
+        </div>
+        <br>
+        <iframe src="https://dragio.atabook.org/" width="90%" height="650" style="border: 2px solid; border-radius: 10px;border:1;display:block;margin:auto"></iframe>
+        <blockquote style="text-align: center;"><a href="https://dragio.atabook.org/" target="_blank">Open GuestBook</a></blockquote>
+        <br>
+        <a href="https://dragio.neocities.org/" target="_blank">Dragio's Neocity made by Aryan</a>
+        <br>
+            
+      </footer>
+  
+    <!-- Closing .layout: -->
+    </div>
+
+
+    <!-- Add any additional Javascript code (<script></script>) here. -->
+    <script>
+    function Myfunction() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+    </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const navItem = document.querySelector("header nav ul > li");
+
+    navItem.addEventListener("click", (e) => {
+    e.stopPropagation();
+
+    navItem.classList.toggle("open");
+    });
+
+    document.addEventListener("click", () => {
+    navItem.classList.remove("open");
+    });
+    });
+    </script>
+    
+    
+    
+    <script>
+    const canvas = document.getElementById("snake-canvas");
+    const ctx = canvas.getContext("2d");
+    const touchLayer = document.getElementById("touch-layer");
+    
+    // =========================
+    // GAME VARS
+    // =========================
+    let tile = 10;
+    let vx = 1, vy = 0;
+    
+    let snake = [
+        {x: 150, y: 120},
+        {x: 140, y: 120},
+        {x: 130, y: 120},
+    ];
+    
+    let food = spawnFood();
+    let score = 0;
+    
+    let gameOver = false;
+    const gameOverScreen = document.getElementById("gameover-screen");
+    
+    gameOverScreen.addEventListener("click", resetGame);
+    gameOverScreen.addEventListener("touchstart", resetGame);
+    
+    // =========================
+    // HIGH SCORE
+    // =========================
+    let highscore = JSON.parse(localStorage.getItem("snake_highscore")) || 0;
+    updateHighscoreUI();
+    
+    function updateHighscoreUI() {
+        let el = document.getElementById("leaderboard");
+        el.innerHTML = `<strong>${highscore}</strong>`;
+    }
+    
+    function saveHighscore(value) {
+        if (value > highscore) {
+            highscore = value;
+            localStorage.setItem("snake_highscore", JSON.stringify(highscore));
+        }
+        updateHighscoreUI();
+    }
+    
+    // =========================
+    // FOOD
+    // =========================
+    function spawnFood() {
+        return {
+            x: Math.floor(Math.random() * (canvas.width / tile)) * tile,
+            y: Math.floor(Math.random() * (canvas.height / tile)) * tile,
+        };
+    }
+    
+    // =========================
+    // KEYBOARD
+    // =========================
+    document.addEventListener("keydown", e => {
+        let key = e.key.toLowerCase();
+        if (key === "w" && vy === 0) { vx = 0; vy = -1; }
+        if (key === "s" && vy === 0) { vx = 0; vy = 1; }
+        if (key === "a" && vx === 0) { vx = -1; vy = 0; }
+        if (key === "d" && vx === 0) { vx = 1; vy = 0; }
+    });
+    
+    // =========================
+    // SWIPE CONTROLS
+    // =========================
+    let startX = 0;
+    let startY = 0;
+    
+    touchLayer.addEventListener("touchstart", e => {
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+    });
+    
+    touchLayer.addEventListener("touchend", e => {
+        let dx = e.changedTouches[0].clientX - startX;
+        let dy = e.changedTouches[0].clientY - startY;
+    
+        if (Math.abs(dx) > Math.abs(dy)) {
+            if (dx > 20 && vx === 0) { vx = 1; vy = 0; }
+            if (dx < -20 && vx === 0) { vx = -1; vy = 0; }
+        } else {
+            if (dy > 20 && vy === 0) { vx = 0; vy = 1; }
+            if (dy < -20 && vy === 0) { vx = 0; vy = -1; }
+        }
+    });
+    
+    // =========================
+    // BUTTON CONTROLS
+    // =========================
+    document.querySelectorAll(".btn-touch").forEach(btn => {
+        const changeDir = () => {
+            const dir = btn.dataset.dir;
+            if (dir === "up" && vy === 0) { vx = 0; vy = -1; }
+            if (dir === "down" && vy === 0) { vx = 0; vy = 1; }
+            if (dir === "left" && vx === 0) { vx = -1; vy = 0; }
+            if (dir === "right" && vx === 0) { vx = 1; vy = 0; }
+        };
+        btn.addEventListener("touchstart", changeDir);
+        btn.addEventListener("click", changeDir);
+    });
+    
+    // =========================
+    // GAME LOGIC
+    // =========================
+    function update() {
+    
+        // Nothing happens if game is over
+        if (gameOver) return;
+    
+        const head = {x: snake[0].x + vx * tile, y: snake[0].y + vy * tile};
+    
+        // WALL COLLISION → GAME OVER
+        if (head.x < 0 || head.x >= canvas.width || head.y < 0 || head.y >= canvas.height) {
+            setTimeout(() => {
+              console.log("This runs after 1 second");
+            }, 1000); 
+            endGame();
+            return;
+        }
+    
+        snake.unshift(head);
+    
+        // FOOD COLLISION
+        if (head.x === food.x && head.y === food.y) {
+            score++;
+            document.getElementById("score").textContent = score;
+            food = spawnFood();
+        } else {
+            snake.pop();
+        }
+    
+        // SELF COLLISION
+        for (let i = 1; i < snake.length; i++) {
+            if (snake[i].x === head.x && snake[i].y === head.y) {
+                setTimeout(() => {
+                  console.log("This runs after 1 second");
+                }, 1000); 
+                endGame();
+            }
+        }
+    }
+    
+    function endGame() {
+        if (gameOver) return;
+    
+        saveHighscore(score);
+        gameOver = true;
+        gameOverScreen.style.display = "flex";  // SHOW GAME OVER
+    }
+    
+    function resetGame() {
+    
+        gameOver = false;
+        gameOverScreen.style.display = "none";  // HIDE GAME OVER
+    
+        snake = [
+            {x: 150, y: 120},
+            {x: 140, y: 120},
+            {x: 130, y: 120},
+        ];
+        vx = 1;
+        vy = 0;
+    
+        score = 0;
+        document.getElementById("score").textContent = 0;
+    
+        food = spawnFood();
+    }
+    
+    // =========================
+    // DRAWING
+    // =========================
+    function draw() {
+        ctx.fillStyle = "#111";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+        ctx.fillStyle = "lime";
+        snake.forEach(p => ctx.fillRect(p.x, p.y, tile, tile));
+    
+        ctx.fillStyle = "red";
+        ctx.fillRect(food.x, food.y, tile, tile);
+    }
+    
+    // =========================
+    // GAME LOOP
+    // =========================
+    function gameLoop() {
+        if (!gameOver) update();
+        draw();
+    }
+    
+    setInterval(gameLoop, 100);
+    </script>
+
+
+
+
+    
+  </body>
+</html>
+
